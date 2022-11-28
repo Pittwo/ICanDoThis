@@ -30,11 +30,11 @@ public class Main {
 		 
 		 //nested
 		 System.out.println("input first value:" );
-		 int firstMultiple = in.nextInt();
+		 int first = in.nextInt();
 		 System.out.println("input second value:" );
-		 int secondMultiple = in.nextInt();
-		 for (int i=1; i<secondMultiple; i++) {
-			 for (int j=1; i<firstMultiple; j++) {
+		 int sec = in.nextInt();
+		 for (int i=1; i<=sec; i++) {
+			 for (int j=1; i<=first; j++) {
 				 System.out.print(j*i+" ");
 			 }
 			 System.out.println();
