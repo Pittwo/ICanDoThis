@@ -33,9 +33,10 @@ public class Main {
 		 int first = in.nextInt();
 		 System.out.println("input second value:" );
 		 int sec = in.nextInt();
-		 for (int i=1; i<=sec; i++) {
-			 for (int j=1; i<=first; j++) {
-				 System.out.print(j*i+" ");
+		 for (int i=first; i<=sec; i++) {
+			 for (int j=first; j<=sec; j++) {
+				 
+				 System.out.print(j*i+"\t");
 			 }
 			 System.out.println();
 		 }
