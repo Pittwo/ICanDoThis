@@ -13,7 +13,7 @@ public class Main {
 		 int arrLength = in.nextInt();
 		 double[] arr = new double[arrLength];
 		 for (int i=0; i<arrLength; i++) {
-			 System.out.println("enter value for position "+i+":");
+			 System.out.println("enter value for position "+(i+1)+":");
 			 arr[i] = in.nextInt();
 		 }
 		 int n = arr.length;
@@ -26,7 +26,12 @@ public class Main {
 					}
 		 System.out.println("the highest value in the array is: "+arr[arr.length-1]);
 		 System.out.println("the lowest value in the array is: "+arr[0]);
-		 System.out.println("the average for this set of numbers is:");//+everything in the array/arr.length);
+		 double sum = 0;
+		 for (int a=0; a<arr.length; a++) {
+			 sum += arr[a];
+		 }
+		 double aver = sum/arrLength;
+		 System.out.println("the average for this set of numbers is: "+aver);//+everything in the array/arr.length);
 		 
 		 //nested
 		 System.out.println("input first value:" );

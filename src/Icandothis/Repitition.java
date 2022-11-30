@@ -17,7 +17,7 @@ public class Repitition {
 			bb = (int) Math.floor(Math.random() * (9 - 1 + 1) + 1);
 			cc = (int) Math.floor(Math.random() * (9 - 1 + 1) + 1);
 			i++;
-			}while(aa!=a && bb!=b && cc!=c); 
+			}while(aa!=a || bb!=b || cc!=c); 
 			System.out.println("it took "+i+" attemps to find the number");
 		}
 	}
