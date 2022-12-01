@@ -9,34 +9,29 @@ public class selection {
 		Scanner in = new Scanner(System.in);
 		System.out.println("input amount including cents:");
 		double money = in.nextDouble();
-		double tax = 0;
-		if (money > 49020) {
-			double money1 = money-49020;
-			if (money1 > 49020) {
-				double moneyremaining1 = (money-49020);
-				tax = 0.15*49020;
-				if (moneyremaining1 > ) {
-					if (moneyremaining1 > 98040 && moneyremaining1 <=151978) {
-						tax = tax + 0.26*moneyremaining1;
-					}else if (moneyremaining1 > 151978) {
-						moneyremaining1 = moneyremaining1-151978;
-						tax = tax + 0.26*151978;
-						if (moneyremaining1 > 151978 && moneyremaining1 <= 216511) {
-						tax = tax + 0.29*moneyremaining1;
-						}else if (moneyremaining1 > 216511) {
-							moneyremaining1 = moneyremaining1-216511;
-							tax = tax + 0.29*216511;
-							if (moneyremaining1 > 216511) {
-							tax = tax + 033*moneyremaining1;
-							}
-						}
+		double tax1 = 0;
+		
+		if (money < 49020) {
+			tax1 += 0.15*money;
+		}else if (money > 49020) {
+			tax1 += 0.15*49020;
+			if (money < 98040) {
+				tax1 += 0.205*(money - 49020);
+			}else if (money > 98040) {
+				tax1 += 0.205*(98040 - 49020);
+				if (money < 151978) {
+					tax1 += 0.26*(money - 98040);
+				}else if (money > 151978) {
+					tax1 += 0.26*(151978 - 98040);
+					if (money < 216511) {
+					tax1 += 0.29*(money - 151978);
+					}else if (money > 216511) {
+						tax1 += 0.33*(money - 216511);
+						
 					}
 				}
 			}
-		}else {
-				tax = 0.15*money;
-			}
-	System.out.println("your tax is:"+tax);	
+		System.out.println("your tax is: "+(tax1));
+		}
 	}
-
 }

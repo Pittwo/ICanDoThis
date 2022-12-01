@@ -31,7 +31,7 @@ public class Main {
 			 sum += arr[a];
 		 }
 		 double aver = sum/arrLength;
-		 System.out.println("the average for this set of numbers is: "+aver);//+everything in the array/arr.length);
+		 System.out.println("the average for this set of numbers is: "+aver);
 		 
 		 //nested
 		 System.out.println("input first value:" );
