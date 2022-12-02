@@ -24,8 +24,9 @@ public class selection {
 				}else if (money > 151978) {
 					tax1 += 0.26*(151978 - 98040);
 					if (money < 216511) {
-					tax1 += 0.29*(money - 151978);
+						tax1 += 0.29*(money - 151978);
 					}else if (money > 216511) {
+						tax1 += 0.29*(216511 - 151978);
 						tax1 += 0.33*(money - 216511);
 						
 					}
